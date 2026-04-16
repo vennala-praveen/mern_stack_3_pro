@@ -17,7 +17,7 @@ const Home = () => {
     };
 
     fetchWorkouts();
-  }, [dispatch]); // ✅ dependency added
+  }, [dispatch]); //dependency added
 
   return (
     <div className='home'>
