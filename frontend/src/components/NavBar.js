@@ -12,7 +12,12 @@ const NavBar = () => {
             <FaRunning style={{ marginLeft: "10px" }} />
           </h1>
         </Link>
+
         <img src="https://thumbs.dreamstime.com/b/art-illustration-351215485.jpg" alt="" className="header-img"/> 
+      </div>
+
+      <div className="mqeen">
+          <p>Welcome to Gym Workout – Stay Fit, Stay Strong!</p>
       </div>
     </header>
   );

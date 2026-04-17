@@ -156,3 +156,35 @@ div.error {
 input.error {
   border: 1px solid var(--error);
 }
+
+/* Separate row for marquee */
+.mqeen {
+  width: 100%;
+  overflow: hidden;
+  text-align: center; 
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Times New Roman', Times, serif;
+  color: #ff0000;
+}
+
+.mqeen p {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll-to-center 7s ease-in-out infinite;
+}
+
+
+/* @keyframes scroll-to-center {
+  from { transform: translateX(100%); }
+  to { transform: translateX(-100%); }
+} */
+
+/* Scroll from left to center, pause, then disappear */
+@keyframes scroll-to-center {
+  0%   { transform: translateX(-100%); }
+  40%  { transform: translateX(-50%); }   
+  60%  { transform: translateX(0); }   
+  100% { transform: translateX(100%); } 
+}
