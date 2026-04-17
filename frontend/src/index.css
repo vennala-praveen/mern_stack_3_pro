@@ -1,86 +1,112 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:weght@300;400;500;600;800&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
 
 /* layout */
-:root{
-  --primary:#1aac83;
-  --error: #e7195a;
+:root {
+  --primary: #1aac83;
+  --error: #ff0000; /* pure red */
 }
 
-body{
-  background: #f1f1f1f1;
+body {
+  background: #f1f1f1;
   margin: 0;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
+  color: #333;
 }
 
-header{
+header {
   background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-header .container{
+header .container {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 10px 20px;
+  padding: 12px 24px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: center;   
+  justify-content: space-between; /* logo left, image right */
 }
 
-header a{
+header a.logo {
   color: #333;
   text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
-.pages{
+header a.logo:hover {
+  color: var(--primary);
+}
+
+header .header-img {
+  height: 60px;   /* adjust as needed */
+  object-fit: contain;
+}
+
+
+.pages {
   max-width: 1400px;
   padding: 20px;
   margin: 0 auto;
 }
 
 /* Homepage */
-.home{
+.home {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  gap: 100px;
+  gap: 80px;
 }
 
-.workout-details{
+.workout-details {
   background: #fff;
-  border-radius: 4px;
+  border-radius: 6px;
   margin: 20px auto;
   padding: 20px;
   position: relative;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.workout-details h4{
+.workout-details:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.workout-details h4 {
   margin: 0 0 10px 0;
   font-size: 1.2rem;
   color: var(--primary);
 }
 
-.workout-details p{
+.workout-details p {
   margin: 0;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: #555;
+  line-height: 1.4;
 }
 
-.workout-details span{
+.workout-details span {
   position: absolute;
   top: 20px;
   right: 20px;
   cursor: pointer;
-  background: #f1f1f1f1;
+  background: #f1f1f1;
   padding: 6px;
   border-radius: 50%;
   color: #333;
+  transition: background 0.3s ease;
 }
 
-/* nw workout form*/
-label, input{
+.workout-details span:hover {
+  background: #ddd;
+}
+
+/* new workout form */
+label, input {
   display: block;
 }
 
-input{
+input {
   padding: 10px;
   margin-top: 10px;
   margin-bottom: 20px;
@@ -88,26 +114,40 @@ input{
   border: 1px solid #ddd;
   border-radius: 4px;
   box-sizing: border-box;
+  transition: border-color 0.3s ease;
 }
 
-form button{
+input:focus {
+  border-color: var(--primary);
+  outline: none;
+}
+
+form button {
   background: var(--primary);
   border: 0;
   color: #fff;
-  padding: 10px;
-  font-family: 'Poppins';
+  padding: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   border-radius: 4px;
   cursor: pointer;
+  transition: background 0.3s ease;
 }
 
-div.error{
-  padding: 10px;
-  background: #ffefef;
+form button:hover {
+  background: #148f6d;
+}
+
+div.error {
+  padding: 12px;
+  background: #ffe5e5;
   border: 1px solid var(--error);
   color: var(--error);
   border-radius: 4px;
   margin: 20px 0;
+  font-weight: 500;
 }
-input.error{
+
+input.error {
   border: 1px solid var(--error);
 }
