@@ -11,8 +11,8 @@ const NavBar = () => {
             Gym Workout
             <FaRunning style={{ marginLeft: "10px" }} />
           </h1>
-          <img src="https://thumbs.dreamstime.com/b/art-illustration-351215485.jpg" alt="" className="header-img"/>
         </Link>
+        <img src="https://thumbs.dreamstime.com/b/art-illustration-351215485.jpg" alt="" className="header-img"/> 
       </div>
     </header>
   );

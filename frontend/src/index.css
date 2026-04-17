@@ -24,10 +24,11 @@ header .container {
   padding: 12px 24px;
   display: flex;
   align-items: center;   
-  justify-content: space-between; /* logo left, image right */
+  justify-content: space-between; 
 }
 
 header a.logo {
+  flex: 1;
   color: #333;
   text-decoration: none;
   font-weight: 500;
@@ -39,8 +40,11 @@ header a.logo:hover {
 }
 
 header .header-img {
-  height: 60px;   /* adjust as needed */
+  flex-shrink: 0;
+  height: 70px;   
   object-fit: contain;
+  width: auto;
+  margin-right: 50px;
 }
 
 
