@@ -44,7 +44,7 @@ header .header-img {
   height: 70px;   
   object-fit: contain;
   width: auto;
-  margin-right: 50px;
+  margin-right: 10px;
 }
 
 
@@ -136,6 +136,7 @@ form button {
   border-radius: 4px;
   cursor: pointer;
   transition: background 0.3s ease;
+  margin-bottom: 20px;
 }
 
 form button:hover {

@@ -55,6 +55,9 @@ const WorkoutForm = () => {
         <button>Add Workout</button>
 
         {error && <div className='error'>{error}</div>}
+
+
+        <img src="https://img.freepik.com/premium-vector/cute-bear-cartoon-vector-white-background_1026278-10384.jpg" alt="" className="header-img"/> 
     </form>
   )
 }
