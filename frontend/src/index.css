@@ -169,22 +169,19 @@ input.error {
   color: #ff0000;
 }
 
+
 .mqeen p {
   display: inline-block;
   white-space: nowrap;
-  animation: scroll-to-center 7s ease-in-out infinite;
+  animation: scroll-bounce 10s ease-in-out infinite;
 }
 
 
-/* @keyframes scroll-to-center {
-  from { transform: translateX(100%); }
-  to { transform: translateX(-100%); }
-} */
-
-/* Scroll from left to center, pause, then disappear */
-@keyframes scroll-to-center {
-  0%   { transform: translateX(-100%); }
-  40%  { transform: translateX(-50%); }   
-  60%  { transform: translateX(0); }   
-  100% { transform: translateX(100%); } 
+@keyframes scroll-bounce {
+  0%   { transform: translateX(-100%); }   
+  25%  { transform: translateX(0); }      
+  40%  { transform: translateX(0); }       
+  60%  { transform: translateX(100%); }   
+  75%  { transform: translateX(100%); }    
+  100% { transform: translateX(-100%); }   
 }
