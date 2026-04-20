@@ -18,7 +18,7 @@ const NavBar = () => {
       </div>
 
       <div className="mqeen">
-          <p>Welcome to Gym Workout – Stay Fit, Stay Strong! NO pain No gain</p>
+          <p>Welcome to Gym Workout – Stay Fit, Stay Strong!, NO pain No gain</p>
       </div>
     </header>
   );
