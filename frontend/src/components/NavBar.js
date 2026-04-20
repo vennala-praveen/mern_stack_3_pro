@@ -6,6 +6,7 @@ const NavBar = () => {
     <header>
       <div className="container">
         <Link to="/" className="logo">
+          <img src="https://thumbs.dreamstime.com/b/art-illustration-351215485.jpg" alt="" className="img1"/> 
           <h1>
             <FaDumbbell style={{ marginRight: "10px" }} />
             Gym Workout
@@ -17,7 +18,7 @@ const NavBar = () => {
       </div>
 
       <div className="mqeen">
-          <p>Welcome to Gym Workout – Stay Fit, Stay Strong!</p>
+          <p>Hustle for that muscle - Welcome to Gym Workout – Stay Fit, Stay Strong! NO pain No gain</p>
       </div>
     </header>
   );

@@ -31,9 +31,13 @@ header .container {
 header a.logo {
   flex: 1;
   color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
+  position: relative;
 }
 
 header a.logo:hover {
@@ -48,6 +52,19 @@ header .header-img {
   margin-right: 10px;
   animation: disco 3s infinite linear;
   border-radius: 50%;
+}
+
+header a.logo .img1{
+  flex-shrink: 0;
+  height: 70px;
+  width: auto;
+  left: 0;
+  margin-left: 0;
+  margin-right: 12px;
+  border-radius: 50%;
+  object-fit: contain;
+  position: absolute;
+  animation: disco 3s infinite linear;
 }
 
 
@@ -198,7 +215,7 @@ input.error {
   width: 100%;
   overflow: hidden;
   text-align: center; 
-  margin-top: 0;
+  margin: 0;
   font-size: 20px;
   font-weight: 600;
   font-family: 'New Rocker', serif;
