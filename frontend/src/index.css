@@ -194,7 +194,7 @@ input.error {
 }
 
 .create .img:hover {
-  transform: perspective(600px) rotateY(15deg) rotateX(10deg) scale(1.05);
+  transform: perspective(600px) rotateY(-20deg) rotateX(20deg) scale(1.05);
   box-shadow: 0 0 30px rgba(255, 0, 150, 0.8),
               0 0 60px rgba(0, 200, 255, 0.6),
               0 0 90px rgba(0, 255, 100, 0.6);

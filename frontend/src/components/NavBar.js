@@ -7,6 +7,7 @@ const NavBar = () => {
       <div className="container">
         <Link to="/" className="logo">
           <img src="https://thumbs.dreamstime.com/b/art-illustration-351215485.jpg" alt="" className="img1"/> 
+          
           <h1>
             <FaDumbbell style={{ marginRight: "10px" }} />
             Gym Workout
