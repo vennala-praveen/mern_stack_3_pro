@@ -45,7 +45,20 @@ header .header-img {
   object-fit: contain;
   width: auto;
   margin-right: 10px;
+
+  /* 3D style additions */
+  box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.3); 
+  transform: perspective(600px) rotateY(5deg) rotateX(2deg); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+header .header-img:hover {
+  transform: perspective(600px) rotateY(0deg) rotateX(0deg) scale(1.05); 
+  box-shadow: 6px 10px 18px rgba(0, 0, 0, 0.4); 
+}
+
+
+
 
 
 .pages {

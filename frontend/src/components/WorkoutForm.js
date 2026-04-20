@@ -57,7 +57,7 @@ const WorkoutForm = () => {
         {error && <div className='error'>{error}</div>}
 
 
-        <img src="https://img.freepik.com/premium-vector/cute-bear-cartoon-vector-white-background_1026278-10384.jpg" alt="" className="header-img"/> 
+        <img src="https://img.freepik.com/premium-vector/cute-bear-cartoon-vector-white-background_1026278-10384.jpg" alt="" className="img"/> 
     </form>
   )
 }
